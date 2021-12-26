@@ -91,7 +91,8 @@ a:hover {
 	background-color: #111;
 	opacity: 90%;
 	border-radius: 0 0 50px 0;
-	color: #aaa
+	color: #aaa;
+	z-index: 9;
 }
 
 .sidebar div {
