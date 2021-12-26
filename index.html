@@ -7,9 +7,34 @@
 		<link rel="stylesheet" href="style/style.css">
 	</head>
 	<body>
+    <!-- sidebar and script for it -->
+    <script>
+      function sidebar_open() {
+        document.getElementById("sidebar").style.display = "block";
+        document.getElementById("sidebarMin").style.display = "none";
+      }
+      function sidebar_close() {
+        document.getElementById("sidebar").style.display = "none";
+        document.getElementById("sidebarMin").style.display = "block";
+      }
+    </script>
+    <div class="sidebar" id="sidebar">
+      <div><a href="#" style="color: #9af">Return to top</a></div>
+      <div><a href="#contact">Contact me</a></div>
+      <div><a href="#carparts">Car parts</a></div>
+      <!--
+      <div>wip link 2</div>
+      <div>wip link 3</div>
+      -->
+      <div class="note" onclick="sidebar_close()" style="cursor: pointer; font-size: 16px;">close menu</div>
+    </div>
+    <div class="sidebarMin" id="sidebarMin" onclick="sidebar_open()" style="cursor: pointer; display: none;">menu</div>
+
+    <!-- page title -->
     <h1 class="rTitle">ROVER</h1>
     <h1 class="rTagline">One of Britain's Fine Cars</h1>
-    
+
+    <!-- first lines -->
     <h1>Restoration of a <a href="https://en.wikipedia.org/wiki/Rover_12#Rover_12_P1_(1934-1936)" target="_blank" rel="noopener noreferrer">1936 Rover 12 (6 Light Saloon)</a></h1>
     <p class="note">(Click on images for a closer look)</p>
 
@@ -33,5 +58,29 @@
     <div class="parallax" style="background-image: url('images/photos/r12garage2.jpg');"></div> <!-- wip -->
     <div class="parallax" style="background-image: url('images/photos/r12garage3.jpg');"></div> <!-- wip -->
     <div class="parallax" style="background-image: url('images/photos/r12cup1.jpg');"></div> <!-- wip -->
+
+    <h2 id="contact">Contact me</h2>
+    <p>
+      If you are interested in following my car restoration journey, please do not hesitate to contact me at the following address
+    </p>
+    <p>
+      info@rover12.com
+    </p>
+    <p>
+      <!-- TODO: more notes, don't put address ... -->
+    </p>
+
+    <a href="images/photos/weirddemonthing.jpg" target="_blank" rel="noopener noreferrer" id="carparts">
+      <div class="parallax" style="background-image: url('images/photos/weirddemonthing.jpg');"></div>
+    </a>
+
+    <h2>Spare Parts Wanted</h2>
+    <p>
+      *
+    </p>
+    <h2>Spare Parts For Sale</h2>
+    <p>
+      *
+    </p>
 	</body>
 </html>
