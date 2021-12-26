@@ -23,6 +23,15 @@
 body {
 	color: white;
 	background-color: black;
+	background: 
+		radial-gradient(#111 3px, transparent 4px),
+		radial-gradient(#111 3px, transparent 4px),
+		linear-gradient(black 4px, transparent 0),
+		linear-gradient(45deg, transparent 74px, transparent 75px, #222 75px, #222 76px, transparent 77px, transparent 109px),
+		linear-gradient(-45deg, transparent 75px, transparent 76px, #222 76px, #222 77px, transparent 78px, transparent 109px),
+		black;
+	background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+	background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 
 a {
@@ -61,5 +70,11 @@ a:hover {
 .rTagline {
 	font-family: Handwritten, serif;
 	font-size: 40px;
+	opacity: 70%;
+}
+
+.note {
+	font-style: italic;
+	font-size: 60%;
 	opacity: 70%;
 }
