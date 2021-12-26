@@ -20,9 +20,17 @@
 	font-size: 28px;
 }
 
+p {
+	font-size: 80%;
+	margin: auto;
+	width: 80%;
+	margin-bottom: 20px;
+}
+
 body {
 	color: white;
 	background-color: black;
+
 	background: 
 		radial-gradient(#111 3px, transparent 4px),
 		radial-gradient(#111 3px, transparent 4px),
@@ -49,16 +57,11 @@ a:hover {
 }
 
 .parallax {
-	min-height: 500px;
+	min-height: 600px;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.paraContents {
-	text-shadow: 0 0 5px black;
-	color: red;
 }
 
 .rTitle {
