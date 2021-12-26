@@ -1,5 +1,21 @@
+@font-face {
+	font-family: Rover;
+	src: url("fonts/MPLUS1-Thin.ttf");
+}
+
+@font-face {
+	font-family: Handwritten;
+	src: url("fonts/BonheurRoyale-Regular.ttf");
+}
+
+@font-face {
+	font-family: Basic;
+	src: url("fonts/Montserrat-Regular.ttf");
+}
+
 * {
-	font-family: monospace;
+	font-family: Basic, sans-serif;
+	font-weight: normal;
 	text-align: center;
 	font-size: 28px;
 }
@@ -7,4 +23,43 @@
 body {
 	color: white;
 	background-color: black;
+}
+
+a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:visited {
+	color: grey;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.parallax {
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.paraContents {
+	text-shadow: 0 0 5px black;
+	color: red;
+}
+
+.rTitle {
+	font-family: Rover, sans-serif;
+	font-size: 80px;
+	line-height: 50%;
+}
+
+.rTagline {
+	font-family: Handwritten, serif;
+	font-size: 40px;
+	opacity: 70%;
 }
