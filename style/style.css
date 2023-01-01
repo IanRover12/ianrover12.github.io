@@ -132,6 +132,7 @@ a:hover {
 	width: 400px;
 	height: 400px;
 	padding: 5px;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -153,19 +154,23 @@ a:hover {
 
 .gallery p {
 	opacity: 0%;
+    transform: translateY(-50%);
 	position: absolute;
 }
 
 .gallery:hover p {
 	opacity: 100%;
+    transform: translateY(0%);
 }
 
 .gallery img {
 	width: 400px;
 	height: 400px;
 	object-fit: cover;
+	transform: rotate(0deg);
 }
 
 .gallery:hover img {
 	opacity: 30%;
+	transform: rotate(-2deg);
 }
