@@ -167,10 +167,8 @@ a:hover {
 	width: 400px;
 	height: 400px;
 	object-fit: cover;
-	transform: rotate(0deg);
 }
 
 .gallery:hover img {
 	opacity: 30%;
-	transform: rotate(-2deg);
 }
